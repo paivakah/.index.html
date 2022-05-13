@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CSS Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    header {
+      background-color: #FF8C00;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 30%;
+      height: 300px;
+      /* only for demonstration, should be removed */
+      background: #FF8C00;
+      padding: 20px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #FF8C00;
+      height: 300px;
+      /* only for demonstration, should be removed */
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: #FF8C00
+      text-align: center;
+      color: white;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+
+      nav,
+      article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <body>
+
+    <h1 style="background-color:#8B0000;">Ambev</h1>
+    <p><b>Nesse layout vamos mostrar os serviços da empresa Ambev</p>
+    <p>A Ambev nasceu, em 1999, da união entre as centenárias Cervejaria Brahma e Companhia Antarctica. Mas a nossa história começou muito antes, quando ainda éramos duas cervejarias na década de 1880: a Companhia Antarctica Paulista e a Manufactura de Cerveja Brahma & Villeger & Companhia.</b></p>
+    <hr>
+
+    <head>
+      <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 200px;
+          background-color: #F08080;
+          border: 1px solid #555;
+        }
+
+        li a {
+          display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none;
+        }
+
+        li {
+          text-align: center;
+          border-bottom: 1px solid #555;
+        }
+
+        li:last-child {
+          border-bottom: none;
+        }
+
+        li a.active {
+          background-color: #F08080;
+          color: white;
+        }
+
+        li a:hover:not(.active) {
+          background-color: #800000;
+          color: white;
+        }
+      </style>
+    </head>
+
+    <body>
+      
+      <center>
+      <ul>
+        <li><a class="active" a href="https://www.ambev.com.br/sobre/">Quem Somos</a></li>
+        <li><a href="https://www.ambev.com.br/marcas/#produtos">Produtos</a></li>
+        <li><a href="https://www.ambev.com.br/contato/">Suporte</a></li>
+      </ul>
+      </center>
+    </body>
+
+    <body>
+      <center>
+        <img src="./index.jpg" height="250">
+      </center>
+      <header>
+        <h2>Bebidas Famosas</h2>
+      </header>
+
+      <section>
+        <nav>
+          <ul>
+            <li><a href="https://www.ambev.com.br/marcas/cervejas/skol">Skol</a></li>
+            <li><a href="https://www.ambev.com.br/marcas/cervejas/budweiser/budweiser/">Budweiser</a></li>
+            <li><a href="https://www.ambev.com.br/marcas/cervejas/antarctica">Antarctica</a></li>
+          </ul>
+        </nav>
+
+        <article>
+          <h1>CERVEJAS</h1>
+
+          <p><i>De cerveja a gente entende. Não é à toa que reunimos as melhores marcas do mercado e surpreendemos até os paladares mais exigentes.</i>
+          <p></i>
+        </article>
+      </section>
+      <html lang="en">
+
+      <head>
+        <title>CSS Template</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          * {
+            box-sizing: border-box;
+          }
+
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+
+          /* Style the header */
+          header {
+            background-color: #E9967A;
+            padding: 20px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+          }
+
+          /* Create two columns/boxes that floats next to each other */
+          nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+          }
+
+          /* Style the list inside the menu */
+          nav ul {
+            list-style-type: none;
+            padding: 0;
+          }
+
+          article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #E9967A;
+            height: 300px;
+            /* only for demonstration, should be removed */
+          }
+
+          /* Clear floats after the columns */
+          section::after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+
+          /* Style the footer */
+          footer {
+            background-color:#B22222;
+            padding: 10px;
+            text-align: center;
+            color: white;
+          }
+
+          /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+          @media (max-width: 600px) {
+
+            nav,
+            article {
+              width: 100%;
+              height: auto;
+            }
+          }
+        </style>
+      </head>
+
+      <body>
+
+        <header>
+          <h2>Visitas</h2>
+        </header>
+
+        <section>
+          <nav>
+            <ul>
+              <li><a href="https://www.ambev.com.br/visitas/">CERVEJARIA ADRIÁTICA (PONTA GROSSA - PR) Tall/Tall frio</a></li>
+              <li><a href="https://www.ambev.com.br/visitas/">Grande/Grande frioCERVEJARIA AQUIRAZ (AQUIRAZ - CE) </a></li>
+              <li><a href="https://www.ambev.com.br/visitas/">CERVEJARIA RIO DE JANEIRO (RIO DE JANEIRO - RJ) io</a></li>
+            </ul>
+          </nav>
+
+          <article>
+            <h1> Que tal visitar as Cervejarias Ambev?</h1>
+            <p><i>A nossa história se mistura com a trajetória da cerveja no país. Não dá para falar em cerveja sem lembrar da Bohemia, da Brahma, da Antarctica, da Skol, da Original…. Vivemos um relacionamento sério, sólido, longo e permanente que se renova a todo momento com novos sabores e rótulos sempre especiais.
+
+Quer ver de perto essa conexão? As portas estão abertas!</i></p>
+            
+          </article>
+        </section>
+
+        <body>
+
+
+          <size>
+            <img src="./indexx.png" height="200">
+          </size>
+
+          <body>
+
+            <body>
+
+
+
+              <p><b>Contato da Empresa:</b></p>
+
+              <address>
+                Mande um e-mail.<br>
+                Nos visite aqui:<br>
+                123, Lugar á procurar<br>
+                BR
+              </address>
+
+            </body>
+          </body>
+
+      </html>
